@@ -43,7 +43,7 @@
                     {{ csrf_field() }}
                     <label class="form-group {!! $errors->first('name', 'has-error') !!}">
                         <span class="form-label">Name</span>
-                        <input type="text" class="form-control" name="name">
+                        <input type="text" class="form-control" name="name" placeholder="Your full name">
                         <p class="form-control-feedback">
                             It looks like you forgot to give us your name!
                         </p>
@@ -54,7 +54,7 @@
                     </label>
                     <label class="form-group">
                         <span class="form-label">Guest (if applicable)</span>
-                        <input type="text" class="form-control" name="guest_name">
+                        <input type="text" class="form-control" name="guest_name" placeholder="Your guest's full name (if applicable)">
                         <label class="form-checkbox">
                             <input type="checkbox" name="guest_vegetarian" value="1">
                             Vegetarian?
@@ -70,6 +70,44 @@
         </section>
         <section class="page-section bg-gray">
             <h3>Schedule</h3>
+            <div class="container-sm">
+                <div class="mar-b">
+                    <div class="mar-b-sm">
+                        <h4 class="text-slg">Arrival &amp; Ceremony</h4>
+                        <div>5:30 PM – 6:30 PM</div>
+                    </div>
+                    <p>
+                        The ceremony starts at 6:00 PM at the Cambridge Mill Pavilion. Please arrive between 5:30 PM and 5:45 PM so you don't miss anything!
+                    </p>
+                </div>
+                <div class="mar-b">
+                    <div class="mar-b-sm">
+                        <h4 class="text-slg">Cocktails &amp; Hors D'Oeuvres</h4>
+                        <div>6:30 PM – 7:30 PM</div>
+                    </div>
+                    <p>
+                        After the ceremony, there will be a cocktail hour in the Garden Terrace before dinner. It's open bar, with lots of snacks!
+                    </p>
+                </div>
+                <div class="mar-b">
+                    <div class="mar-b-sm">
+                        <h4 class="text-slg">Dinner</h4>
+                        <div>8:00 PM – 10:00 PM</div>
+                    </div>
+                    <p>
+                        For dinner, you get your choice of beef tenderloin, roasted chicken breast, or pan seared trout with shrimp. No need to tell us in advance, there will be a waiter to take your order at the table.
+                    </p>
+                </div>
+                <div class="mar-b">
+                    <div class="mar-b-sm">
+                        <h4 class="text-slg">Reception &amp; Dancing</h4>
+                        <div>10:00 PM – 1:00 AM</div>
+                    </div>
+                    <p>
+                        After dinner, we'll party until 1:00 AM! There will be a DJ, plenty of late night snacks, and an open bar serving cocktails and a good selection of domestic and imported beer for the entire night.
+                    </p>
+                </div>
+            </div>
         </section>
         <section class="page-section">
             <h3>Location &amp; Accommodations</h3>
