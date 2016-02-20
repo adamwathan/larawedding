@@ -8,6 +8,10 @@ html {
     line-height: 1.5;
 }
 
+.wf-loading > * {
+    visibility: hidden;
+}
+
 .hero {
     min-height: 32rem;
     display: flex;
@@ -41,7 +45,9 @@ html {
 
 .text-lg { font-size: 2rem; }
 .text-xl { font-size: 3rem; }
+.text-xsl { font-size: 3.5rem; }
 .text-xxl { font-size: 5.5rem; }
+.text-spaced-sm { letter-spacing: 0.125em; }
 .text-spaced { letter-spacing: 0.25em; }
 .line-height-tight { line-height: 1; }
 
@@ -93,6 +99,19 @@ html {
 .form-group {
     display: block;
     margin-bottom: 2rem;
+
+    &.has-error {
+        .form-control { border-color: #d9534f; }
+        .form-label { color: #d9534f; }
+        .form-control-feedback {
+            display: block;
+            color: #d9534f;
+        }
+    }
+}
+
+.form-control-feedback {
+    display: none;
 }
 
 .form-label {
@@ -108,6 +127,14 @@ html {
     display: block;
     width: 100%;
     padding: 0.5em 1em;
+}
+
+.form-checkbox {
+    display: block;
+    margin-top: 0.5rem;
+    > input[type="checkbox"] {
+        margin-right: 0.5rem;
+    }
 }
 
 .btn {
