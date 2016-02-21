@@ -16,14 +16,18 @@ html {
 }
 
 .hero {
-    min-height: 62vw;
+    position: relative;
+    min-height: 65vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
-    background-image: url('/img/header-blur2.jpg');
+    background-image: url('/img/mill-bg5.jpg');
     padding: 2rem;
+    @media (min-width: 940px) {
+        min-height: 100vh;
+    }
 }
 
 .hero-content {
@@ -151,6 +155,12 @@ html {
     text-align: left;
 }
 
+.container {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container-sm {
     max-width: 30rem;
     margin-left: auto;
@@ -218,4 +228,45 @@ html {
 .btn-block {
     display: block;
     width: 100%;
+}
+
+
+.map {
+    position: relative;
+    padding-bottom: 350px;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: -2rem;
+    > iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.img-fit {
+    width: 100%;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.col-6 {
+    @media(min-width: 500px) {
+        float: left;
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
