@@ -10,11 +10,9 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        Request::macro('validate', function ($rules, $messages = [], $customAttributes = []) {
-            (new class {
-                use ValidatesRequests;
-            })->validate($this, $rules, $messages, $customAttributes);
-        });
+        // Request::macro('validate', function (...$args) {
+        //     (new class { use ValidatesRequests; })->validate($this, ...$args);
+        // });
     }
 
     public function register()
