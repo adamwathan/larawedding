@@ -42,6 +42,9 @@
             @include('location')
         </section>
         <section class="page-section bg-gray">
+            @include('accommodations')
+        </section>
+        <section class="page-section">
             @include('gift-registry')
         </section>
     </body>
