@@ -3,7 +3,10 @@
 
 html {
     font-family: "futura-pt", sans-serif;
-    font-size: 18px;
+    font-size: 14px;
+    @media (min-width: 500px) {
+        font-size: 18px;
+    }
     color: rgba(0,0,0,0.85);
     line-height: 1.5;
 }
@@ -13,17 +16,66 @@ html {
 }
 
 .hero {
-    min-height: 32rem;
+    min-height: 62vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
     background-image: url('/img/header-blur2.jpg');
+    padding: 2rem;
 }
 
 .hero-content {
     text-align: center;
+}
+
+.hero-h1 {
+    .text-uppercase;
+    .wt-lt;
+    .line-height-tight;
+    .text-justify;
+    .text-justify-short;
+
+    font-size: 2rem;
+
+    @media (min-width: 500px) {
+        font-size: 10vw;
+    }
+
+    @media (min-width: 940px) {
+        font-size: 5.5rem;
+    }
+}
+.hero-h2 {
+    .text-uppercase;
+    .wt-hvy;
+    .text-justify;
+
+    font-size: 1.5rem;
+
+    @media (min-width: 500px) {
+        .text-spaced-sm;
+        font-size: 6.2vw;
+    }
+
+    @media (min-width: 940px) {
+        font-size: 3.5rem;
+    }
+}
+.hero-h3 {
+    .text-uppercase;
+    .wt-lt;
+    .text-justify;
+
+    @media (min-width: 500px) {
+        .text-spaced;
+        font-size: 3.3vw;
+    }
+
+    @media (min-width: 940px) {
+        font-size: 2rem;
+    }
 }
 
 .font-script {
@@ -43,7 +95,7 @@ html {
     font-weight: 700;
 }
 
-.text-slg { font-size: 1.25rem; }
+.text-slg { font-size: 1.5rem; }
 .text-lg { font-size: 2rem; }
 .text-xl { font-size: 3rem; }
 .text-xsl { font-size: 3.5rem; }
@@ -73,7 +125,7 @@ html {
 
 .mar-t-xxl { margin-top: 8rem; }
 .mar-b-xxl { margin-bottom: 8rem; }
-.mar-b { margin-bottom: 2rem; }
+.mar-b { margin-bottom: 2.5rem; }
 .mar-b-sm { margin-bottom: 0.75rem; }
 
 .bg-gray { background-color: #f4f4f4; }
@@ -82,10 +134,16 @@ html {
     text-align: center;
     padding: 2rem;
 
-    h3 {
+    > h3 {
         .wt-md;
-        .text-lg;
+        .text-slg;
+        .text-uppercase;
+        .text-spaced-sm;
         margin-bottom: 1rem;
+
+        @media (min-width: 500px) {
+            .text-lg;
+        }
     }
 }
 

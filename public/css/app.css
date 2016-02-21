@@ -425,15 +425,20 @@ ul {
 }
 html {
   font-family: "futura-pt", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.85);
   line-height: 1.5;
+}
+@media (min-width: 500px) {
+  html {
+    font-size: 18px;
+  }
 }
 .wf-loading > * {
   visibility: hidden;
 }
 .hero {
-  min-height: 32rem;
+  min-height: 62vw;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -446,9 +451,79 @@ html {
   background-size: cover;
   background-position: center;
   background-image: url('/img/header-blur2.jpg');
+  padding: 2rem;
 }
 .hero-content {
   text-align: center;
+}
+.hero-h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1;
+  text-align: justify;
+  margin-bottom: -1.5em !important;
+  margin-bottom: -1em !important;
+  font-size: 2rem;
+}
+.hero-h1:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .hero-h1 {
+    font-size: 10vw;
+  }
+}
+@media (min-width: 940px) {
+  .hero-h1 {
+    font-size: 5.5rem;
+  }
+}
+.hero-h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: justify;
+  margin-bottom: -1.5em !important;
+  font-size: 1.5rem;
+}
+.hero-h2:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .hero-h2 {
+    letter-spacing: 0.125em;
+    font-size: 6.2vw;
+  }
+}
+@media (min-width: 940px) {
+  .hero-h2 {
+    font-size: 3.5rem;
+  }
+}
+.hero-h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: -1.5em !important;
+}
+.hero-h3:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .hero-h3 {
+    letter-spacing: 0.25em;
+    font-size: 3.3vw;
+  }
+}
+@media (min-width: 940px) {
+  .hero-h3 {
+    font-size: 2rem;
+  }
 }
 .font-script {
   font-family: "penna-connected-swashes", sans-serif;
@@ -466,7 +541,7 @@ html {
   font-weight: 700;
 }
 .text-slg {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .text-lg {
   font-size: 2rem;
@@ -511,7 +586,7 @@ html {
   margin-bottom: 8rem;
 }
 .mar-b {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .mar-b-sm {
   margin-bottom: 0.75rem;
@@ -523,10 +598,17 @@ html {
   text-align: center;
   padding: 2rem;
 }
-.page-section h3 {
+.page-section > h3 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
   margin-bottom: 1rem;
+}
+@media (min-width: 500px) {
+  .page-section > h3 {
+    font-size: 2rem;
+  }
 }
 .text-left {
   text-align: left;

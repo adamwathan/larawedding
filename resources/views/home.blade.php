@@ -27,9 +27,9 @@
     <body>
         <header class="hero">
             <div class="hero-content">
-                <h1 class="text-uppercase text-xxl wt-lt line-height-tight text-justify text-justify-short">Adam &amp; Katharine</h1>
-                <h2 class="text-uppercase text-xsl wt-hvy text-justify text-spaced-sm">are getting married.</h2>
-                <h3 class="text-uppercase text-lg wt-lt text-justify text-spaced">May 27, 2016 in Cambridge, ON</h3>
+                <h1 class="hero-h1">Adam &amp; Katharine</h1>
+                <h2 class="hero-h2">are getting married.</h2>
+                <h3 class="hero-h3">May 27, 2016 in Cambridge, ON</h3>
             </div>
         </header>
         <section id="rsvp" class="page-section">
@@ -73,8 +73,8 @@
             <div class="container-sm">
                 <div class="mar-b">
                     <div class="mar-b-sm">
-                        <h4 class="text-slg">Arrival &amp; Ceremony</h4>
-                        <div>5:30 PM – 6:30 PM</div>
+                        <h4 class="text-slg wt-lt">Arrival &amp; Ceremony</h4>
+                        <div class="wt-hvy">5:30 PM – 6:30 PM</div>
                     </div>
                     <p>
                         The ceremony starts at 6:00 PM at the Cambridge Mill Pavilion. Please arrive between 5:30 PM and 5:45 PM so you don't miss anything!
@@ -82,8 +82,8 @@
                 </div>
                 <div class="mar-b">
                     <div class="mar-b-sm">
-                        <h4 class="text-slg">Cocktails &amp; Hors D'Oeuvres</h4>
-                        <div>6:30 PM – 7:30 PM</div>
+                        <h4 class="text-slg wt-lt">Cocktails &amp; Hors D'Oeuvres</h4>
+                        <div class="wt-hvy">6:30 PM – 7:30 PM</div>
                     </div>
                     <p>
                         After the ceremony, there will be a cocktail hour in the Garden Terrace before dinner. It's open bar, with lots of snacks!
@@ -91,8 +91,8 @@
                 </div>
                 <div class="mar-b">
                     <div class="mar-b-sm">
-                        <h4 class="text-slg">Dinner</h4>
-                        <div>8:00 PM – 10:00 PM</div>
+                        <h4 class="text-slg wt-lt">Dinner</h4>
+                        <div class="wt-hvy">8:00 PM – 10:00 PM</div>
                     </div>
                     <p>
                         For dinner, you get your choice of beef tenderloin, roasted chicken breast, or pan seared trout with shrimp. No need to tell us in advance, there will be a waiter to take your order at the table.
@@ -100,8 +100,8 @@
                 </div>
                 <div class="mar-b">
                     <div class="mar-b-sm">
-                        <h4 class="text-slg">Reception &amp; Dancing</h4>
-                        <div>10:00 PM – 1:00 AM</div>
+                        <h4 class="text-slg wt-lt">Reception &amp; Dancing</h4>
+                        <div class="wt-hvy">10:00 PM – 1:00 AM</div>
                     </div>
                     <p>
                         After dinner, we'll party until 1:00 AM! There will be a DJ, plenty of late night snacks, and an open bar serving cocktails and a good selection of domestic and imported beer for the entire night.
