@@ -39,13 +39,13 @@
             @include('schedule')
         </section>
         <section class="page-section">
-            @include('location')
+            @include('gift-registry')
         </section>
         <section class="page-section bg-gray">
-            @include('accommodations')
+            @include('location')
         </section>
         <section class="page-section">
-            @include('gift-registry')
+            @include('accommodations')
         </section>
     </body>
 </html>
