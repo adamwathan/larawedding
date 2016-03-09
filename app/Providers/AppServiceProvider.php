@@ -10,8 +10,9 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        Request::macro('filter', function (...$args) {
-            return collect($this->all())->filter(...$args);
+        Request::macro('filter', function () {
+            $collection = collect($this->all());
+            return call_user_func_array([$collection, 'filter'], func_get_args());
         });
     }
 
