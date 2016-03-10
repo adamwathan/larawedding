@@ -5,7 +5,7 @@
 <br>
 @if ($rsvp->guest_name)
 <strong>Guest</strong>
-<p>{{ $rsvp->name }}</p>
+<p>{{ $rsvp->guest_name }}</p>
 <br>
 @endif
 <strong>Songs</strong>
